@@ -4,6 +4,19 @@
 // Licoreria "Elissir Bebidas"
 
 
+const nombreUsuario = document.querySelector('#nombreUsuario');
+
+function obtenerUsuario(){
+    let usuario;
+
+    do {
+        usuario = prompt('Hola! ¿Cómo te llamas?').trim();
+    } while( usuario == null || usuario === '' || usuario.length < 3)
+
+    nombreUsuario.innerText = usuario;
+}
+
+obtenerUsuario()
 
 const carrito = [ 
     { nombre: ' Johnnie Walker Blue Label', img: 'img/botella-blueLabel.png', bebidaTipo: 'Whisky', precio: 310000},
