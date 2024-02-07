@@ -3,8 +3,10 @@
 // TERCERA pre-entrega JS
 // Licoreria "Elissir Bebidas"
 
-
+const tituloPrincipal =document.querySelector('h1');
 const nombreUsuario = document.querySelector('#nombreUsuario');
+
+console.log(tituloPrincipal)
 
 function obtenerUsuario(){
     let usuario;
@@ -17,6 +19,15 @@ function obtenerUsuario(){
 }
 
 obtenerUsuario()
+
+
+tituloPrincipal.onclick = () => {
+    tituloPrincipal.innerText = 'Gracias por visitarnos 🥃'
+}
+
+nombreUsuario.oncl
+
+
 
 const carrito = [ 
     { nombre: ' Johnnie Walker Blue Label', img: 'img/botella-blueLabel.png', bebidaTipo: 'Whisky', precio: 310000},
@@ -77,7 +88,7 @@ carrito.sort( (a, b) => {
 console.log(carrito);
 
 // selecciono un elemento
-const titulo = document.querySelector('h1');
+
 const sub = document.querySelector('.sub');
 const contenedor = document.querySelector('#tarjetas');
 
