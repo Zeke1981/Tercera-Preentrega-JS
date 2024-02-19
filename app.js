@@ -1,12 +1,53 @@
 // Comision 49845
 // Alumno: Ezequiel Cardozo Soto
-// TERCERA pre-entrega JS
+// Trabajo Final JS
 // Licoreria "Elissir Bebidas"
 
 const tituloPrincipal =document.querySelector('h1');
 const nombreUsuario = document.querySelector('#nombreUsuario');
 
+
+
+
+let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+    
+    e.preventDefault();
+    
+    let formulario = e.target
+    
+    console.log(formulario.children[1].value); 
+    
+    console.log(formulario.children[3].value);  
+}
+
+
+/* const formulario = document.querySelector('form');
+const inputEmail = document.querySelector('#inputEmail');
+const inputPassword = document.querySelector('#inputPassword');
+
+
+function validarEmailPass(){
+    const email = inputEmail.value;
+    const pass = inputPassword.value;
+
+    alert(`El email es ${email} y el pass es ${pass}`);
+}
+
 console.log(tituloPrincipal)
+
+
+formulario.addEventListener('submit', ( evento ) => {
+    evento.preventDefault();  
+
+    console.log(evento)
+    validarEmailPass();
+}) */
+
+
+
 
 function obtenerUsuario(){
     let usuario;

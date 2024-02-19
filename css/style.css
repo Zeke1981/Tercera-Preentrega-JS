@@ -43,6 +43,25 @@ main {
     min-height: 90vh;
 }
 
+form {
+    width: 250px;
+    border-radius: 5px;
+    border: #2980b9 1px solid;
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    }
+
+/* form{
+    width: 20px;
+    height: 30px;
+    padding: 50px;
+} */
+
+
 .row {
     display: flex;
     flex-direction: row;
